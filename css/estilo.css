@@ -1361,36 +1361,42 @@ img.cover2{
     grid-area: album1;
 }
 .album1:hover{
+    transition: all 1s;
     opacity: 0.5;
 }
 .album2{
     grid-area: album2;
 }
 .album2:hover{
+    transition: all 1s;
     opacity: 0.5;
 }
 .album3{
     grid-area: album3;
 }
 .album3:hover{
+    transition: all 1s;
     opacity: 0.5;
 }
 .album4{
     grid-area: album4;
 }
 .album4:hover{
+    transition: all 1s;
     opacity: 0.5;
 }
 .album5{
     grid-area: album5;
 }
 .album5:hover{
+    transition: all 1s;
     opacity: 0.5;
 }
 .album6{
     grid-area: album6;
 }
 .album6:hover{
+    transition: all 1s;
     opacity: 0.5;
 }
 @media screen and (max-width: 1200px){
