@@ -63,15 +63,15 @@ header{
         color: #D3C6B5;
         font-family: Lora, serif;
         font-weight: 500;
-        font-size: 14pt;
+        font-size: 12pt;
         letter-spacing: 1pt;
         position: absolute; 
         left: 0; 
         right: 0; 
-        top: 10px;
+        top: 5px;
         margin-left: auto; 
         margin-right: auto; 
-        width: 79px
+        width: 69px
     }
 }
 a.logohalsey:visited{
@@ -188,7 +188,7 @@ li.subscribe{
         color: #92836F;
         font-family: Lora, serif;
         font-size: 8pt;
-        margin: 16px auto 16px auto;
+        margin: 10px auto 10px auto;
     }
     li.video{
         grid-area: video;
@@ -196,7 +196,7 @@ li.subscribe{
         color: #92836F;
         font-family: Lora, serif;
         font-size: 8pt;
-        margin: 16px auto 16px auto;
+        margin: 10px auto 10px auto;
     }
     li.tour{
         grid-area: tour;
@@ -204,7 +204,7 @@ li.subscribe{
         color: #92836F;
         font-family: Lora, serif;
         font-size: 8pt;
-        margin: 16px auto 16px auto;
+        margin: 10px auto 10px auto;
     }
     li.subscribe{
         grid-area: subscribe;
@@ -212,7 +212,7 @@ li.subscribe{
         color: #92836F;
         font-family: Lora, serif;
         font-size: 8pt;
-        margin: 16px auto 16px auto;
+        margin: 10px auto 10px auto;
         width: auto;
     }
 }
@@ -1006,7 +1006,7 @@ footer{
 @media screen and (max-width: 480px){
     footer{
         background-image: url(../Assets/img/barra2.jpg);
-        height: 40px;
+        height: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1141,7 +1141,7 @@ img.spotify:hover{
         position: relative;
         height: 20px;
         width: auto;
-        margin: 0px 10px 0px 0px ;
+        margin: 0px 10px 7px 0px ;
         padding-top: 5px;
     }
     img.face{
@@ -1149,28 +1149,28 @@ img.spotify:hover{
         height: 20px;
         width: auto;
         padding-top: 5px;
-        margin: 0px 15px 0px 15px ;
+        margin: 0px 15px 7px 15px ;
     }
     img.twitter{
         position: relative;
         height: 18px;
         width: auto;
         padding-top: 5px;
-        margin: 0px 15px 0px 15px ;
+        margin: 0px 15px 7px 15px ;
     }
     img.youtube{
         position: relative;
         height: 20px;
         width: auto;
         padding-top: 5px;
-        margin: 0px 15px 0px 15px ;
+        margin: 0px 15px 7px 15px ;
     }
     img.spotify{
         position: relative;
         height: 20px;
         width: auto;
         padding-top: 5px;
-        margin: 0px 15px 0px 15px ;
+        margin: 0px 15px 7px 15px ;
     }
 }
 /*MUSIC*/
@@ -1907,6 +1907,9 @@ img.cover2{
         overflow: hidden;
     }
 }
+table{
+    border-collapse: separate;
+}
 .gira{
     color: #D3C6B5;
     font-family: Lora, serif;
@@ -2025,13 +2028,22 @@ main.subscribir{
     flex-direction: column;
     margin: 96px 0px 85px 0px;
 }
+@media screen and (max-width: 1025px){
+    main.subscribir{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 382px 0px 382px 0px;
+    }
+}
 @media screen and (max-width: 768px){
     main.subscribir{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin: 80px 0px 70px 0px;
+        margin: 228px 0px 228px 0px;
     }
 }
 @media screen and (max-width: 480px){
@@ -2040,7 +2052,7 @@ main.subscribir{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin: 65px 0px 65px 0px;
+        margin: 150px 0px 150px 0px;
     }
 }
 .newsletter{
@@ -2103,6 +2115,7 @@ main.subscribir{
 }
 .formulario{
     position: relative;
+    margin: auto;
 }
 input.boton:hover {
     background-color: #92836F;
