@@ -26,6 +26,54 @@ header{
     margin-right: auto; 
     width: 162px
 }
+@media screen and (max-width:1025px){
+    .logohalsey{
+        color: #D3C6B5;
+        font-family: Lora, serif;
+        font-weight: 500;
+        font-size: 25pt;
+        letter-spacing: 1pt;
+        position: absolute; 
+        left: 0; 
+        right: 0; 
+        top: 10px;
+        margin-left: auto; 
+        margin-right: auto; 
+        width: 136px
+    }
+}
+@media screen and (max-width:625px){
+    .logohalsey{
+        color: #D3C6B5;
+        font-family: Lora, serif;
+        font-weight: 500;
+        font-size: 20pt;
+        letter-spacing: 1pt;
+        position: absolute; 
+        left: 0; 
+        right: 0; 
+        top: 9px;
+        margin-left: auto; 
+        margin-right: auto; 
+        width: 110px
+    }
+}
+@media screen and (max-width:480px){
+    .logohalsey{
+        color: #D3C6B5;
+        font-family: Lora, serif;
+        font-weight: 500;
+        font-size: 14pt;
+        letter-spacing: 1pt;
+        position: absolute; 
+        left: 0; 
+        right: 0; 
+        top: 10px;
+        margin-left: auto; 
+        margin-right: auto; 
+        width: 79px
+    }
+}
 a.logohalsey:visited{
     text-decoration: none;
     color: #D3C6B5;
@@ -64,6 +112,109 @@ li.subscribe{
     font-family: Lora, serif;
     font-size: 16pt;
     margin: 22px auto 22px auto;
+}
+@media screen and (max-width:1025px){
+    li.music{
+        grid-area: music;
+        text-decoration: none;
+        color: #92836F;
+        font-family: Lora, serif;
+        font-size: 14pt;
+        margin: 20px auto 20px auto;
+    }
+    li.video{
+        grid-area: video;
+        text-decoration: none;
+        color: #92836F;
+        font-family: Lora, serif;
+        font-size: 14pt;
+        margin: 20px auto 20px auto;
+    }
+    li.tour{
+        grid-area: tour;
+        text-decoration: none;
+        color: #92836F;
+        font-family: Lora, serif;
+        font-size: 14pt;
+        margin: 20px auto 20px auto;
+    }
+    li.subscribe{
+        grid-area: subscribe;
+        text-decoration: none;
+        color: #92836F;
+        font-family: Lora, serif;
+        font-size: 14pt;
+        margin: 20px auto 20px auto;
+    }
+}
+@media screen and (max-width:625px){
+    li.music{
+        grid-area: music;
+        text-decoration: none;
+        color: #92836F;
+        font-family: Lora, serif;
+        font-size: 11pt;
+        margin: 18px auto 18px auto;
+    }
+    li.video{
+        grid-area: video;
+        text-decoration: none;
+        color: #92836F;
+        font-family: Lora, serif;
+        font-size: 11pt;
+        margin: 18px auto 18px auto;
+    }
+    li.tour{
+        grid-area: tour;
+        text-decoration: none;
+        color: #92836F;
+        font-family: Lora, serif;
+        font-size: 11pt;
+        margin: 18px auto 18px auto;
+    }
+    li.subscribe{
+        grid-area: subscribe;
+        text-decoration: none;
+        color: #92836F;
+        font-family: Lora, serif;
+        font-size: 11pt;
+        margin: 18px auto 18px auto;
+    }
+}
+@media screen and (max-width:480px){
+    li.music{
+        grid-area: music;
+        text-decoration: none;
+        color: #92836F;
+        font-family: Lora, serif;
+        font-size: 8pt;
+        margin: 16px auto 16px auto;
+    }
+    li.video{
+        grid-area: video;
+        text-decoration: none;
+        color: #92836F;
+        font-family: Lora, serif;
+        font-size: 8pt;
+        margin: 16px auto 16px auto;
+    }
+    li.tour{
+        grid-area: tour;
+        text-decoration: none;
+        color: #92836F;
+        font-family: Lora, serif;
+        font-size: 8pt;
+        margin: 16px auto 16px auto;
+    }
+    li.subscribe{
+        grid-area: subscribe;
+        text-decoration: none;
+        color: #92836F;
+        font-family: Lora, serif;
+        font-size: 8pt;
+        margin: 16px auto 16px auto;
+        width: auto;
+    }
 }
 .menu{
     display: grid;
