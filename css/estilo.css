@@ -944,14 +944,14 @@ a.link{
         width: 130px
     }
 }
-img.banner{
+.carousel{
     position: relative;
     width: 100%;
     margin-top: 70px;
     object-fit: fill;
 }
 @media screen and (max-width: 1200px){
-    img.banner{
+    .carousel{
         position: relative;
         width: 100%;
         margin-top: 50px;
@@ -959,7 +959,7 @@ img.banner{
     }
 }
 @media screen and (max-width: 768px){
-    img.banner{
+    .carousel{
         position: relative;
         width: 100%;
         margin-top: 40px;
@@ -967,7 +967,7 @@ img.banner{
     }
 }
 @media screen and (max-width: 625px){
-    img.banner{
+    .carousel{
         position: relative;
         width: 100%;
         margin-top: 30px;
