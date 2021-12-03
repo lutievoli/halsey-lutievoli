@@ -81,6 +81,9 @@ a.logohalsey:visited{
 a.logohalsey:hover{
     text-decoration: none;
 }
+a:hover{
+    text-decoration: none;
+}
 li.music{
     grid-area: music;
     text-decoration: none;
