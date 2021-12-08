@@ -1,0 +1,542 @@
+main{
+    .promolatest{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 750px;
+        grid-template-areas: 
+            "cover2 info2";
+
+        .cover2{
+            grid-area: cover2;
+            margin: auto;
+        }
+        .infolatest{
+            grid-area: info2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+            .latest{
+                font-family: Lora, serif;
+                font-size: 50pt;
+                color: #D3C6B5;
+                letter-spacing: 1pt;
+                margin: 10px;
+            }
+            .reproductor1{
+                height: 80px;
+                width: 583px;
+            }
+        }
+    }
+    @media screen and (max-width: 1200px){
+        .promolatest{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 600px;
+            grid-template-areas: 
+                "cover2 info2";
+
+            .cover2{
+                grid-area: cover2;
+                margin: auto;
+                width: 400px;
+                height: auto;
+            }
+            .infolatest{
+                .latest{
+                    font-family: Lora, serif;
+                    font-size: 40pt;
+                    color: #D3C6B5;
+                    letter-spacing: 1pt;
+                    margin: 10px;
+                }
+                .reproductor1{
+                    height: 80px;
+                    width: 483px;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 1025px){
+        .promolatest{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 450px;
+            grid-template-areas: 
+                "cover2 info2";
+            margin-top: 50px;
+
+            .cover2{
+                grid-area: cover2;
+                margin: auto;
+                width: 300px;
+                height: auto;
+            }
+            .infolatest{
+                .latest{
+                    font-family: Lora, serif;
+                    font-size: 35pt;
+                    color: #D3C6B5;
+                    letter-spacing: 1pt;
+                    margin: 10px;
+                }
+                .reproductor1{
+                    height: 80px;
+                    width: 427px;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 920px){
+        .promolatest{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 400px;
+            grid-template-areas: 
+                "cover2 info2";
+            margin-top: 30px;
+            .cover2{
+                grid-area: cover2;
+                margin: auto;
+                width: 250px;
+                height: auto;
+            }
+            .infolatest{
+                .latest{
+                    font-family: Lora, serif;
+                    font-size: 30pt;
+                    color: #D3C6B5;
+                    letter-spacing: 1pt;
+                    margin: 10px;
+                }
+                .reproductor1{
+                    height: 80px;
+                    width: 372px;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 768px){
+        .promolatest{
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 300px 200px;
+            grid-template-areas: 
+                "cover2" 
+                "info2";
+            margin-top: 50px;
+
+            .cover2{
+                grid-area: cover2;
+                margin: auto;
+                width: 300px;
+                height: auto;
+            }
+            .infolatest{
+                grid-area: info2;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .latest{
+                    font-family: Lora, serif;
+                    font-size: 37pt;
+                    color: #D3C6B5;
+                    letter-spacing: 1pt;
+                    margin-bottom: 10px;
+                }
+                .reproductor1{
+                    height: 80px;
+                    width: 470px;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 590px){
+        .promolatest{
+            .infolatest{
+                .latest{
+                    font-family: Lora, serif;
+                    font-size: 32pt;
+                    color: #D3C6B5;
+                    letter-spacing: 1pt;
+                    margin-bottom: 10px;
+                }
+                .reproductor1{
+                    height: 80px;
+                    width: 392px;
+                }
+
+            }
+        }
+    }
+    @media screen and (max-width: 480px){
+        .promolatest{
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 250px 160px;
+            grid-template-areas: 
+                "cover2" 
+                "info2";
+            margin-top: 50px;
+
+            .cover2{
+                grid-area: cover2;
+                margin: auto;
+                width: 250px;
+                height: auto;
+            }
+            .infolatest{
+                .latest{
+                    font-family: Lora, serif;
+                    font-size: 23pt;
+                    color: #D3C6B5;
+                    letter-spacing: 1pt;
+                    margin-bottom: 10px;
+                }
+                .reproductor1{
+                    height: 80px;
+                    width: 295px;
+                }
+            }
+        }
+    }
+    .releases{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 450px 450px;
+        grid-template-areas: 
+        "album1 album2 album3"
+        "album4 album5 album6";
+        margin-bottom: 100px;
+
+        .stream1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .album1{
+                grid-area: album1;
+
+                &:hover{
+                    transition: all 1s;
+                    opacity: 0.5;
+                }
+            }
+            .album2{
+                grid-area: album2;
+
+                &:hover{
+                    transition: all 1s;
+                    opacity: 0.5;
+                }
+            }
+            .album3{
+                grid-area: album3;
+
+                &:hover{
+                    transition: all 1s;
+                    opacity: 0.5;
+                }
+            }
+            .album4{
+                grid-area: album4;
+
+                &:hover{
+                    transition: all 1s;
+                    opacity: 0.5;
+                }
+            }
+            .album5{
+                grid-area: album5;
+
+                &:hover{
+                    transition: all 1s;
+                    opacity: 0.5;
+                }
+            }
+            .album6{
+                grid-area: album6;
+
+                &:hover{
+                    transition: all 1s;
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 1200px){
+        .releases{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 400px 400px;
+            grid-template-areas: 
+            "album1 album2 album3"
+            "album4 album5 album6";
+            margin-bottom: 50px;
+
+            .stream1{
+                .album1{
+                    grid-area: album1;
+                    width: 300px;
+                    height: auto;
+                }
+                .album2{
+                    grid-area: album2;
+                    width: 300px;
+                    height: auto;
+                }
+                .album3{
+                    grid-area: album3;
+                    width: 300px;
+                    height: auto;
+                }
+                .album4{
+                    grid-area: album4;
+                    width: 300px;
+                    height: auto;
+                }
+                .album5{
+                    grid-area: album5;
+                    width: 300px;
+                    height: auto;
+                }
+                .album6{
+                    grid-area: album6;
+                    width: 300px;
+                    height: auto;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 1025px){
+        .releases{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 350px 350px;
+            grid-template-areas: 
+            "album1 album2 album3"
+            "album4 album5 album6";
+            margin-bottom: 50px;
+
+            .stream1{
+                .album1{
+                    grid-area: album1;
+                    width: 250px;
+                    height: auto;
+                }
+                .album2{
+                    grid-area: album2;
+                    width: 250px;
+                    height: auto;
+                }
+                .album3{
+                    grid-area: album3;
+                    width: 250px;
+                    height: auto;
+                }
+                .album4{
+                    grid-area: album4;
+                    width: 250px;
+                    height: auto;
+                }
+                .album5{
+                    grid-area: album5;
+                    width: 250px;
+                    height: auto;
+                }
+                .album6{
+                    grid-area: album6;
+                    width: 250px;
+                    height: auto;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 920px){
+        .releases{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 290px 290px;
+            grid-template-areas: 
+            "album1 album2 album3"
+            "album4 album5 album6";
+            margin-bottom: 50px;
+
+            .stream1{
+                .album1{
+                    grid-area: album1;
+                    width: 200px;
+                    height: auto;
+                }
+                .album2{
+                    grid-area: album2;
+                    width: 200px;
+                    height: auto;
+                }
+                .album3{
+                    grid-area: album3;
+                    width: 200px;
+                    height: auto;
+                }
+                .album4{
+                    grid-area: album4;
+                    width: 200px;
+                    height: auto;
+                }
+                .album5{
+                    grid-area: album5;
+                    width: 200px;
+                    height: auto;
+                }
+                .album6{
+                    grid-area: album6;
+                    width: 200px;
+                    height: auto;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 768px){
+        .releases{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 320px 320px 320px;
+            grid-template-areas: 
+            "album1 album2" 
+            "album3 album4"
+            "album5 album6";
+            margin-bottom: 50px;
+            margin-top: 50px;
+
+            .stream1{
+                .album1{
+                    grid-area: album1;
+                    width: 250px;
+                    height: auto;
+                }
+                .album2{
+                    grid-area: album2;
+                    width: 250px;
+                    height: auto;
+                }
+                .album3{
+                    grid-area: album3;
+                    width: 250px;
+                    height: auto;
+                }
+                .album4{
+                    grid-area: album4;
+                    width: 250px;
+                    height: auto;
+                }
+                .album5{
+                    grid-area: album5;
+                    width: 250px;
+                    height: auto;
+                }
+                .album6{
+                    grid-area: album6;
+                    width: 250px;
+                    height: auto;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 590px){
+        .releases{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 250px 250px 250px;
+            grid-template-areas: 
+            "album1 album2" 
+            "album3 album4"
+            "album5 album6";
+            margin-bottom: 50px;
+            margin-top: 50px;
+
+            .stream1{
+                .album1{
+                    grid-area: album1;
+                    width: 200px;
+                    height: auto;
+                }
+                .album2{
+                    grid-area: album2;
+                    width: 200px;
+                    height: auto;
+                }
+                .album3{
+                    grid-area: album3;
+                    width: 200px;
+                    height: auto;
+                }
+                .album4{
+                    grid-area: album4;
+                    width: 200px;
+                    height: auto;
+                }
+                .album5{
+                    grid-area: album5;
+                    width: 200px;
+                    height: auto;
+                }
+                .album6{
+                    grid-area: album6;
+                    width: 200px;
+                    height: auto;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 480px){
+        .releases{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 160px 160px 160px;
+            grid-template-areas: 
+            "album1 album2" 
+            "album3 album4"
+            "album5 album6";
+            margin-bottom: 50px;
+            margin-top: 50px;
+
+            .stream1{
+                .album1{
+                    grid-area: album1;
+                    width: 140px;
+                    height: auto;
+                }
+                .album2{
+                    grid-area: album2;
+                    width: 140px;
+                    height: auto;
+                }
+                .album3{
+                    grid-area: album3;
+                    width: 140px;
+                    height: auto;
+                }
+                .album4{
+                    grid-area: album4;
+                    width: 140px;
+                    height: auto;
+                }
+                .album5{
+                    grid-area: album5;
+                    width: 140px;
+                    height: auto;
+                }
+                .album6{
+                    grid-area: album6;
+                    width: 140px;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+

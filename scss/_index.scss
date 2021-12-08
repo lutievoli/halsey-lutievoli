@@ -1,0 +1,512 @@
+main{
+    .portada{
+        width: 100%;
+        object-fit: fill;
+    }
+    @media screen and (max-width:480px){
+        .portada{
+            width: 100%;
+            object-fit: fill;
+            margin-bottom: 40px;
+        }
+    }
+    .albumpromo{
+        display: grid;
+        grid-template-columns: auto 600px auto;
+        grid-template-rows: 80px 600px 80px;
+        grid-template-areas: 
+            "texto texto texto"
+            "cruz1 tapa cruz2"
+            "boton boton boton";
+
+        .simbolo1{
+            grid-area: cruz1;
+            margin: auto;
+        }
+        .IICHLIWP{
+            grid-area: texto;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            font-family: Lora, serif;
+            font-size: 15pt;
+            color: $claro;
+        }
+        .cover{
+            grid-area: tapa;
+            margin: auto;
+        }
+        .simbolo2{
+            grid-area: cruz2;
+            margin: auto;
+        }
+        .outnow{
+            grid-area: boton;
+            margin: auto;
+            width: 250px;
+        }
+    }
+    @media screen and (max-width: 1200px){
+        .albumpromo{
+            display: grid;
+            grid-template-columns: auto 540px auto;
+            grid-template-rows: 50px 540px 50px;
+            grid-template-areas: 
+                "texto texto texto"
+                "cruz1 tapa cruz2"
+                "boton boton boton";
+
+            .simbolo1{
+                grid-area: cruz1;
+                margin: auto;
+                width: 100px;
+                height: auto;
+            }
+            .IICHLIWP{
+                grid-area: texto;
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                font-family: Lora, serif;
+                font-size: 12pt;
+                color: $claro;
+            }
+            .cover{
+                grid-area: tapa;
+                margin: auto;
+                width: 500px;
+                height: auto;
+            }
+            .simbolo2{
+                grid-area: cruz2;
+                margin: auto;
+                width: 100px;
+                height: auto;
+            }
+            .outnow{
+                grid-area: boton;
+                margin: auto;
+                width: 190px;
+            }
+        }
+    }
+    @media screen and (max-width:1025px){
+        .albumpromo{
+            display: grid;
+            grid-template-columns: auto 440px auto;
+            grid-template-rows: 50px 440px 50px;
+            grid-template-areas: 
+                "texto texto texto"
+                "cruz1 tapa cruz2"
+                "boton boton boton";
+            
+            .cover{
+                grid-area: tapa;
+                margin: auto;
+                width: 400px;
+                height: auto;
+            }
+            .outnow{
+                grid-area: boton;
+                margin: auto;
+                width: 165px;
+            }
+        }
+    }
+    @media screen and (max-width:768px){
+        .albumpromo{
+            display: grid;
+            grid-template-columns: auto 290px auto;
+            grid-template-rows: 50px 270px 50px;
+            grid-template-areas: 
+                "texto texto texto"
+                "cruz1 tapa cruz2"
+                "boton boton boton";
+
+            .simbolo1{
+                grid-area: cruz1;
+                margin: auto;
+                width: 70px;
+                height: auto;
+            }
+            .IICHLIWP{
+                grid-area: texto;
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                font-family: Lora, serif;
+                font-size: 9pt;
+                color: $claro;
+            }
+            .cover{
+                grid-area: tapa;
+                margin: auto;
+                width: 250px;
+                height: auto;
+            }
+            .simbolo2{
+                grid-area: cruz2;
+                margin: auto;
+                width: 70px;
+                height: auto;
+            }
+            .outnow{
+                grid-area: boton;
+                margin: auto;
+                width: 145px;
+            }
+        }
+    }
+    @media screen and (max-width:625px){
+        .albumpromo{
+            display: grid;
+            grid-template-columns: auto 240px auto;
+            grid-template-rows: 50px 220px 50px;
+            grid-template-areas: 
+                "texto texto texto"
+                "cruz1 tapa cruz2"
+                "boton boton boton";
+
+            .simbolo1{
+                grid-area: cruz1;
+                margin: auto;
+                width: 60px;
+                height: auto;
+            }
+            .IICHLIWP{
+                grid-area: texto;
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                font-family: Lora, serif;
+                font-size: 8pt;
+                color: $claro;
+            }
+            .cover{
+                grid-area: tapa;
+                margin: auto;
+                width: 200px;
+                height: auto;
+            }
+            .simbolo2{
+                grid-area: cruz2;
+                margin: auto;
+                width: 60px;
+                height: auto;
+            }
+            .outnow{
+                grid-area: boton;
+                margin: auto;
+                width: 134px;
+            }
+        }
+    }
+    @media screen and (max-width:480px){
+        .albumpromo{
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 80px 18px 220px 35px 80px;
+            grid-template-areas: 
+                "cruz1"
+                "texto"
+                "tapa"
+                "boton"
+                "cruz2";
+            margin-bottom: 30px;
+
+            .simbolo1{
+                grid-area: cruz1;
+                display: flex;
+                justify-content: center;
+                width: 50px;
+                height: auto;
+            }
+            .simbolo2{
+                grid-area: cruz2;
+                display: flex;
+                justify-content: center;
+                width: 50px;
+                height: auto;
+            }
+        }
+    }
+    .pleipromo{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 700px;
+        grid-template-areas: 
+            "poster info";
+
+        .posterpeli{
+            grid-area: poster;
+            display: flex;
+            justify-content: flex-end;
+            margin: auto 0px auto auto;
+        }
+        .infopeli{
+            grid-area: info;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .nombrepeli{
+                text-align: center;
+                font-family: Lora, serif;
+                color: $claro;
+                font-size: 45pt;
+                letter-spacing: 1pt;
+                width: 671px;
+            }
+            .streaming{
+                margin: 15px;
+                color: $claro;
+                font-family: Lora, serif;
+                display: flex;
+                justify-content: center;
+            }
+            .hbo{
+                margin: 15px 0px 5px 0px;
+                width: 250px
+            }
+            .trailer{
+                margin: 5px 0px 0px 0px;
+                width: 250px
+            }
+        }
+    }
+    @media screen and (max-width: 1200px){
+        .pleipromo{
+            display: grid;
+            grid-template-columns: 40% auto;
+            grid-template-rows: 600px;
+            grid-template-areas: 
+                "poster info";
+
+            .posterpeli{
+                grid-area: poster;
+                display: flex;
+                justify-content: flex-end;
+                margin: auto 0px auto auto;
+                width: 310px;
+                height: auto;
+            }
+            .infopeli{
+                .nombrepeli{
+                    text-align: center;
+                    font-family: Lora, serif;
+                    color: $claro;
+                    font-size: 36pt;
+                    letter-spacing: 1pt;
+                    width: 573px;
+                }
+                .hbo{
+                    margin: 10px 0px 5px 0px;
+                    width: 190px
+                }
+                .trailer{
+                    margin: 5px 0px 0px 0px;
+                    width: 190px
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 1025px){
+        .pleipromo{
+            display: grid;
+            grid-template-columns: 37% auto;
+            grid-template-rows: 500px;
+            grid-template-areas: 
+                "poster info";
+
+            .posterpeli{
+                grid-area: poster;
+                display: flex;
+                justify-content: flex-end;
+                margin: auto 0px auto auto;
+                width: 260px;
+                height: auto;
+            }
+            .infopeli{
+                .nombrepeli{
+                    text-align: center;
+                    font-family: Lora, serif;
+                    color: $claro;
+                    font-size: 30pt;
+                    letter-spacing: 1pt;
+                    width: 482px;
+                }
+                .streaming{
+                    margin: 10px;
+                    color: $claro;
+                    font-family: Lora, serif;
+                    font-size: 11pt;
+                    display: flex;
+                    justify-content: center;
+                }
+                .hbo{
+                    margin: 10px 0px 5px 0px;
+                    width: 160px
+                }
+                .trailer{
+                    margin: 5px 0px 0px 0px;
+                    width: 160px
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 768px){
+        .pleipromo{
+            display: grid;
+            grid-template-columns: 37% auto;
+            grid-template-rows: 400px;
+            grid-template-areas: 
+                "poster info";
+
+            .posterpeli{
+                grid-area: poster;
+                display: flex;
+                justify-content: flex-end;
+                margin: auto 0px auto auto;
+                width: 200px;
+                height: auto;
+            }
+            .infopeli{
+                .nombrepeli{
+                    text-align: center;
+                    font-family: Lora, serif;
+                    color: $claro;
+                    font-size: 24pt;
+                    letter-spacing: 1pt;
+                    width: 392px;
+                }
+                .streaming{
+                    margin: 10px;
+                    color: $claro;
+                    font-family: Lora, serif;
+                    font-size: 9pt;
+                    display: flex;
+                    justify-content: center;
+                }
+                .hbo{
+                    margin: 10px 0px 5px 0px;
+                    width: 140px
+                }
+                .trailer{
+                    margin: 5px 0px 0px 0px;
+                    width: 140px
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 625px){
+        .pleipromo{
+            display: grid;
+            grid-template-columns: 37% auto;
+            grid-template-rows: 300px;
+            grid-template-areas: 
+                "poster info";
+
+            .posterpeli{
+                grid-area: poster;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                width: 160px;
+                height: auto;
+            }
+            .infopeli{
+                .nombrepeli{
+                    text-align: center;
+                    font-family: Lora, serif;
+                    color: $claro;
+                    font-size: 18pt;
+                    letter-spacing: 1pt;
+                    width: 300px;
+                }
+                .streaming{
+                    margin: 10px;
+                    color: $claro;
+                    font-family: Lora, serif;
+                    font-size: 8pt;
+                    display: flex;
+                    justify-content: center;
+                }
+                .hbo{
+                    margin: 10px 0px 5px 0px;
+                    width: 130px
+                }
+                .trailer{
+                    margin: 5px 0px 0px 0px;
+                    width: 130px
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 480px){
+        .pleipromo{
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 270px 200px;
+            grid-template-areas: 
+                "poster"
+                "info";
+            margin-bottom: 30px;
+
+            .posterpeli{
+                grid-area: poster;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                margin: auto;
+                width: 160px;
+                height: auto;
+            }
+            .infopeli{
+                .hbo{
+                    margin: 5px 0px 0px 0px;
+                    width: 130px
+                }
+            }
+        }
+    }
+    .link{
+        color: $claro;
+
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    .carousel{
+        position: relative;
+        width: 100%;
+        margin-top: 70px;
+        object-fit: fill;
+    }
+    @media screen and (max-width: 1200px){
+        .carousel{
+            position: relative;
+            width: 100%;
+            margin-top: 50px;
+            object-fit: fill;
+        }
+    }
+    @media screen and (max-width: 768px){
+        .carousel{
+            position: relative;
+            width: 100%;
+            margin-top: 40px;
+            object-fit: fill;
+        }
+    }
+    @media screen and (max-width: 625px){
+        .carousel{
+            position: relative;
+            width: 100%;
+            margin-top: 30px;
+            object-fit: fill;
+        }
+    }
+}
+
+

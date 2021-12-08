@@ -1,0 +1,203 @@
+footer{
+    background-image: url(../Assets/img/barra2.jpg);
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+    .insta{
+        position: relative;
+        height: 45px;
+        width: auto;
+        margin: 0px 40px 0px 0px ;
+        padding-top: 8px;
+
+        &:hover{
+            opacity: 0.3;
+        }
+    }
+    .face{
+        position: relative;
+        height: 45px;
+        width: auto;
+        padding-top: 8px;
+        margin: 0px 40px 0px 40px ;
+
+        &:hover{
+            opacity: 0.3;
+        }
+    }
+    .twitter{
+        position: relative;
+        height: 42px;
+        width: auto;
+        padding-top: 8px;
+        margin: 0px 40px 0px 40px ;
+
+        &:hover{
+            opacity: 0.3;
+        }
+    }
+    .youtube{
+        position: relative;
+        height: 45px;
+        width: auto;
+        padding-top: 8px;
+        margin: 0px 40px 0px 40px ;
+
+        &:hover{
+            opacity: 0.3;
+        }
+    }
+    .spotify{
+        position: relative;
+        height: 45px;
+        width: auto;
+        padding-top: 8px;
+        margin: 0px 40px 0px 40px ;
+
+        &:hover{
+            opacity: 0.3;
+        }
+    }
+}
+
+@media screen and (max-width:1025px){
+    footer{
+        background-image: url(../Assets/img/barra2.jpg);
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .insta{
+            position: relative;
+            height: 35px;
+            width: auto;
+            margin: 0px 25px 0px 0px ;
+            padding-top: 5px;
+        }
+        .face{
+            position: relative;
+            height: 35px;
+            width: auto;
+            padding-top: 5px;
+            margin: 0px 25px 0px 25px ;
+        }
+        .twitter{
+            position: relative;
+            height: 32px;
+            width: auto;
+            padding-top: 5px;
+            margin: 0px 25px 0px 25px ;
+        }
+        .youtube{
+            position: relative;
+            height: 35px;
+            width: auto;
+            padding-top: 5px;
+            margin: 0px 25px 0px 25px ;
+        }
+        .spotify{
+            position: relative;
+            height: 35px;
+            width: auto;
+            padding-top: 5px;
+            margin: 0px 25px 0px 25px ;
+        }
+    }
+}
+@media screen and (max-width: 625px){
+    footer{
+        background-image: url(../Assets/img/barra2.jpg);
+        height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .insta{
+            position: relative;
+            height: 30px;
+            width: auto;
+            margin: 0px 20px 0px 0px ;
+            padding-top: 5px;
+        }
+        .face{
+            position: relative;
+            height: 30px;
+            width: auto;
+            padding-top: 5px;
+            margin: 0px 20px 0px 20px ;
+        }
+        .twitter{
+            position: relative;
+            height: 28px;
+            width: auto;
+            padding-top: 5px;
+            margin: 0px 20px 0px 20px ;
+        }
+        .youtube{
+            position: relative;
+            height: 30px;
+            width: auto;
+            padding-top: 5px;
+            margin: 0px 20px 0px 20px ;
+        }
+        .spotify{
+            position: relative;
+            height: 30px;
+            width: auto;
+            padding-top: 5px;
+            margin: 0px 20px 0px 20px ;
+        }
+    }
+}
+@media screen and (max-width: 480px){
+    footer{
+        background-image: url(../Assets/img/barra2.jpg);
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .insta{
+            position: relative;
+            height: 20px;
+            width: auto;
+            margin: 0px 10px 5px 0px ;
+            padding-top: 5px;
+        }
+        .face{
+            position: relative;
+            height: 20px;
+            width: auto;
+            padding-top: 5px;
+            margin: 0px 15px 5px 15px ;
+        }
+        .twitter{
+            position: relative;
+            height: 18px;
+            width: auto;
+            padding-top: 5px;
+            margin: 0px 15px 5px 15px ;
+        }
+        .youtube{
+            position: relative;
+            height: 20px;
+            width: auto;
+            padding-top: 5px;
+            margin: 0px 15px 5px 15px ;
+        }
+        .spotify{
+            position: relative;
+            height: 20px;
+            width: auto;
+            padding-top: 5px;
+            margin: 0px 15px 5px 15px ;
+        }
+    }
+}

@@ -1,0 +1,237 @@
+header{
+    background-image: url(../Assets/img/barra.jpg);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    .logohalsey{
+        color: $claro;
+        font-family: Lora, serif;
+        font-weight: 500;
+        font-size: 30pt;
+        letter-spacing: 1pt;
+        position: absolute; 
+        left: 0; 
+        right: 0; 
+        top: 7px;
+        margin-left: auto; 
+        margin-right: auto; 
+        width: 162px
+    }
+    @media screen and (max-width:1025px){
+        .logohalsey{
+            color: $claro;
+            font-family: Lora, serif;
+            font-weight: 500;
+            font-size: 25pt;
+            letter-spacing: 1pt;
+            position: absolute; 
+            left: 0; 
+            right: 0; 
+            top: 10px;
+            margin-left: auto; 
+            margin-right: auto; 
+            width: 136px
+        }
+    }
+    @media screen and (max-width:625px){
+        .logohalsey{
+            color: $claro;
+            font-family: Lora, serif;
+            font-weight: 500;
+            font-size: 20pt;
+            letter-spacing: 1pt;
+            position: absolute; 
+            left: 0; 
+            right: 0; 
+            top: 9px;
+            margin-left: auto; 
+            margin-right: auto; 
+            width: 110px
+        }
+    }
+    @media screen and (max-width:480px){
+        .logohalsey{
+            color: $claro;
+            font-family: Lora, serif;
+            font-weight: 500;
+            font-size: 12pt;
+            letter-spacing: 1pt;
+            position: absolute; 
+            left: 0; 
+            right: 0; 
+            top: 5px;
+            margin-left: auto; 
+            margin-right: auto; 
+            width: 69px
+        } 
+    }
+    // trato de usar & para el hover pero se me rompe todo :(
+    a:hover{
+        text-decoration: none;
+    }
+    nav{
+        .menu{
+            display: grid;
+            grid-template-columns: 20% 20% 20% 20% 20%;
+            grid-template-rows: auto;
+            grid-template-areas: 
+            "music video . tour subscribe";
+            margin: 0px;
+
+            li.music{
+                grid-area: music;
+                text-decoration: none;
+                color: $oscuro;
+                font-family: Lora, serif;
+                font-size: 16pt;
+                margin: 22px auto 22px auto;
+            }
+            li.video{
+                grid-area: video;
+                text-decoration: none;
+                color: $oscuro;
+                font-family: Lora, serif;
+                font-size: 16pt;
+                margin: 22px auto 22px auto;
+            }
+            li.tour{
+                grid-area: tour;
+                text-decoration: none;
+                color: $oscuro;
+                font-family: Lora, serif;
+                font-size: 16pt;
+                margin: 22px auto 22px auto;
+            }
+            li.subscribe{
+                grid-area: subscribe;
+                text-decoration: none;
+                color: $oscuro;
+                font-family: Lora, serif;
+                font-size: 16pt;
+                margin: 22px auto 22px auto;
+            }
+            @media screen and (max-width:1025px){
+                li.music{
+                    grid-area: music;
+                    text-decoration: none;
+                    color: $oscuro;
+                    font-family: Lora, serif;
+                    font-size: 14pt;
+                    margin: 20px auto 20px auto;
+                }
+                li.video{
+                    grid-area: video;
+                    text-decoration: none;
+                    color: $oscuro;
+                    font-family: Lora, serif;
+                    font-size: 14pt;
+                    margin: 20px auto 20px auto;
+                }
+                li.tour{
+                    grid-area: tour;
+                    text-decoration: none;
+                    color: $oscuro;
+                    font-family: Lora, serif;
+                    font-size: 14pt;
+                    margin: 20px auto 20px auto;
+                }
+                li.subscribe{
+                    grid-area: subscribe;
+                    text-decoration: none;
+                    color: $oscuro;
+                    font-family: Lora, serif;
+                    font-size: 14pt;
+                    margin: 20px auto 20px auto;
+                }
+            }
+            @media screen and (max-width:625px){
+                li.music{
+                    grid-area: music;
+                    text-decoration: none;
+                    color: $oscuro;
+                    font-family: Lora, serif;
+                    font-size: 11pt;
+                    margin: 18px auto 18px auto;
+                }
+                li.video{
+                    grid-area: video;
+                    text-decoration: none;
+                    color: $oscuro;
+                    font-family: Lora, serif;
+                    font-size: 11pt;
+                    margin: 18px auto 18px auto;
+                }
+                li.tour{
+                    grid-area: tour;
+                    text-decoration: none;
+                    color: $oscuro;
+                    font-family: Lora, serif;
+                    font-size: 11pt;
+                    margin: 18px auto 18px auto;
+                }
+                li.subscribe{
+                    grid-area: subscribe;
+                    text-decoration: none;
+                    color: $oscuro;
+                    font-family: Lora, serif;
+                    font-size: 11pt;
+                    margin: 18px auto 18px auto;
+                }
+            }
+            @media screen and (max-width:480px){
+                li.music{
+                    grid-area: music;
+                    text-decoration: none;
+                    color: $oscuro;
+                    font-family: Lora, serif;
+                    font-size: 8pt;
+                    margin: 10px auto 10px auto;
+                }
+                li.video{
+                    grid-area: video;
+                    text-decoration: none;
+                    color: $oscuro;
+                    font-family: Lora, serif;
+                    font-size: 8pt;
+                    margin: 10px auto 10px auto;
+                }
+                li.tour{
+                    grid-area: tour;
+                    text-decoration: none;
+                    color: $oscuro;
+                    font-family: Lora, serif;
+                    font-size: 8pt;
+                    margin: 10px auto 10px auto;
+                }
+                li.subscribe{
+                    grid-area: subscribe;
+                    text-decoration: none;
+                    color: $oscuro;
+                    font-family: Lora, serif;
+                    font-size: 8pt;
+                    margin: 10px auto 10px auto;
+                    width: auto;
+                }
+            }
+            a.boton{
+                color: $oscuro;
+
+                &:visited{
+                    text-decoration: none;
+                    color: $oscuro;
+                }
+                &:hover{
+                    font-style: italic;
+                    color: $claro;
+                }
+            }
+        }
+    
+    }
+
+}
+
+
+
+
