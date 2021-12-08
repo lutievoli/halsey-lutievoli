@@ -1,0 +1,177 @@
+main{
+    .videos{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "vid1"
+        "vid2"
+        "vid3"
+        "vid4";
+        justify-content: center;
+        margin: 58px 0px 58px 0px;
+
+        .vid1{
+            grid-area: vid1;
+            width: 900px;
+            height: 506px;
+            margin: 50px;
+        }
+        .vid2{
+            grid-area: vid2;
+            width: 900px;
+            height: 506px;
+            margin: 50px;
+        }
+        .vid3{
+            grid-area: vid3;
+            width: 900px;
+            height: 506px;
+            margin: 50px;
+        }
+        .vid4{
+            grid-area: vid4;
+            width: 900px;
+            height: 506px;
+            margin: 50px;
+        }
+    }
+    @media screen and (max-width: 1025px){
+        .videos{
+            .vid1{
+                grid-area: vid1;
+                width: 650px;
+                height: 366px;
+                margin: 50px;
+            }
+            .vid2{
+                grid-area: vid2;
+                width: 650px;
+                height: 366px;
+                margin: 50px;
+            }
+            .vid3{
+                grid-area: vid3;
+                width: 650px;
+                height: 366px;
+                margin: 50px;
+            }
+            .vid4{
+                grid-area: vid4;
+                width: 650px;
+                height: 366px;
+                margin: 50px;
+            }
+        }
+    }
+    @media screen and (max-width: 768px){
+        .videos{
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+            "vid1"
+            "vid2"
+            "vid3"
+            "vid4";
+            justify-content: center;
+            margin: 30px 0px 30px 0px;
+
+            .vid1{
+                grid-area: vid1;
+                width: 470px;
+                height: 264px;
+                margin: 40px;
+            }
+            .vid2{
+                grid-area: vid2;
+                width: 470px;
+                height: 264px;
+                margin: 40px;
+            }
+            .vid3{
+                grid-area: vid3;
+                width: 470px;
+                height: 264px;
+                margin: 40px;
+            }
+            .vid4{
+                grid-area: vid4;
+                width: 470px;
+                height: 264px;
+                margin: 40px;
+            }
+        }
+    }
+    @media screen and (max-width: 550px){
+        .videos{
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+            "vid1"
+            "vid2"
+            "vid3"
+            "vid4";
+            justify-content: center;
+            margin: 20px 0px 20px 0px;
+
+            .vid1{
+                grid-area: vid1;
+                width: 400px;
+                height: 225px;
+                margin: 30px;
+            }
+            .vid2{
+                grid-area: vid2;
+                width: 400px;
+                height: 225px;
+                margin: 30px;
+            }
+            .vid3{
+                grid-area: vid3;
+                width: 400px;
+                height: 225px;
+                margin: 30px;
+            }
+            .vid4{
+                grid-area: vid4;
+                width: 400px;
+                height: 225px;
+                margin: 30px;
+            }
+        }
+    }
+    @media screen and (max-width: 415px){
+        .videos{
+            .vid1{
+                grid-area: vid1;
+                width: 300px;
+                height: 169px;
+                margin: 40px 20px 20px 20px;
+            }
+            .vid2{
+                grid-area: vid2;
+                width: 300px;
+                height: 169px;
+                margin: 20px;
+            }
+            .vid3{
+                grid-area: vid3;
+                width: 300px;
+                height: 169px;
+                margin: 20px;
+            }
+            .vid4{
+                grid-area: vid4;
+                width: 300px;
+                height: 169px;
+                margin: 20px 20px 40px 20px;
+            }
+        }
+    }
+}
+
+
+
+

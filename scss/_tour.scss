@@ -1,0 +1,160 @@
+main{
+    div{
+        .bannertour{
+            position: relative;
+            margin-top: 34px;
+            width: 100%;
+            object-fit: fill;
+        }
+    }
+    .fechasgira{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+
+        .gira{
+            color: $claro;
+            font-family: Lora, serif;
+            font-size: 18pt;
+            border-spacing: 40px;
+            border-collapse: separate;
+
+            tr{
+                td {
+                    padding-left: 50px;
+                    padding-right: 50px;
+
+                    .buy{
+                        font-size: 18pt;
+                        width: 130px;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 1200px){
+        .fechasgira{
+            .gira{
+                color: $claro;
+                font-family: Lora, serif;
+                font-size: 16pt;
+                border-spacing: 35px;
+
+                tr{
+                    td {
+                        padding-left: 40px;
+                        padding-right: 40px;
+
+                        .buy{
+                            font-size: 16pt;
+                            width: 130px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 1025px){
+        .fechasgira{
+            .gira{
+                color: $claro;
+                font-family: Lora, serif;
+                font-size: 14pt;
+                border-spacing: 25px;
+
+                tr{
+                    td {
+                        padding-left: 30px;
+                        padding-right: 30px;
+
+                        .buy{
+                            font-size: 14pt;
+                            width: 110px;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    @media screen and (max-width: 768px){
+        .fechasgira{
+            .gira{
+                color: $claro;
+                font-family: Lora, serif;
+                font-size: 12pt;
+                border-spacing: 20px;
+
+                tr{
+                    td{
+                        .buy{
+                            font-size: 12pt;
+                            width: 100px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 625px){
+        .fechasgira{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+
+            .gira{
+                color: $claro;
+                font-family: Lora, serif;
+                font-size: 10pt;
+                border-spacing: 10px;
+
+                tr{
+                    td {
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        padding-top: 10px;
+
+                        .buy{
+                            font-size: 10pt;
+                            width: 80px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 480px){
+        .fechasgira{
+            .gira{
+                color: $claro;
+                font-family: Lora, serif;
+                font-size: 7pt;
+                border-spacing: 5px;
+            }
+        }
+    }
+    @media screen and (max-width: 480px){
+        .fechasgira{
+            .gira{
+                tr{
+                    td {
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        padding-top: 10px;
+                        
+                        .buy{
+                            font-size: 8pt;
+                            width: 60px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
