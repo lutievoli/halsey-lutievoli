@@ -13,9 +13,9 @@ main{
 
             .subscribe{
                 font-size: 30pt;
-                font-family: Lora, serif;
-                letter-spacing: 1pt;
-                color: $claro;
+                font-family: map-get($map: $Texto, $key: fuente);
+                letter-spacing: map-get($map: $Texto, $key: espaciado);
+                color: map-get($map: $Texto, $key: color);
             }
         }
 
@@ -30,71 +30,24 @@ main{
                 align-items: center;
     
                 .form{
-                    align-items: center;
+                    @include boton;
                     background-color: $rojo;
                     border: 0px;
-                    box-sizing: border-box;
-                    color: $claro;
-                    cursor: pointer;
-                    display: inline-flex;
-                    fill: $negro;
-                    font-family: Lora, serif;
-                    font-size: 20px;
-                    font-weight: 600;
                     height: 60px;
                     width: 420px;
-                    justify-content: center;
-                    letter-spacing: 1pt;;
-                    line-height: 24px;
                     min-width: 140px;
-                    outline: 0;
-                    padding: 0 17px;
-                    text-align: center;
-                    text-decoration: none;
-                    transition: all .3s;
-                    user-select: none;
-                    -webkit-user-select: none;
-                    touch-action: manipulation;
                     -moz-box-shadow: inset 0 0 10px #220000;
                    -webkit-box-shadow: inset 0 0 10px #220000;
                    box-shadow: inset 0 0 10px #220000;
                    margin: 10px 0px 10px 0px;
                 }
                 .select{
-                    align-items: center;
-                    background-color: $rojo;
-                    border: 0px;
-                    box-sizing: border-box;
-                    color: $claro;
-                    cursor: pointer;
-                    display: inline-flex;
-                    fill: $negro;
-                    font-family: Lora, serif;
-                    font-size: 20px;
-                    font-weight: 600;
-                    height: 60px;
-                    width: 420px;
-                    justify-content: center;
-                    letter-spacing: 1pt;;
-                    line-height: 24px;
-                    min-width: 140px;
-                    outline: 0;
-                    padding: 0 17px;
-                    text-align: center;
-                    text-decoration: none;
-                    transition: all .3s;
-                    user-select: none;
-                    -webkit-user-select: none;
-                    touch-action: manipulation;
-                    -moz-box-shadow: inset 0 0 10px #220000;
-                   -webkit-box-shadow: inset 0 0 10px #220000;
-                   box-shadow: inset 0 0 10px #220000;
-                   margin: 10px 0px 10px 0px;
+                    @extend .form;
                 }
                 .checkbox{
-                    font-family: Lora, serif;
+                    font-family: map-get($map: $Texto, $key: fuente);
                     font-size: 9pt;
-                    color: $claro;
+                    color: map-get($map: $Texto, $key: color);
                     position: relative;
     
                     .check{
@@ -116,16 +69,16 @@ main{
             background-color: $negro;
             border: 2px solid $negro;
             box-sizing: border-box;
-            color: $claro;
+            color: map-get($map: $Texto, $key: color);
             cursor: pointer;
             display: inline-flex;
             fill: $negro;
-            font-family: Lora, serif;
+            font-family: map-get($map: $Texto, $key: fuente);
             font-size: 20px;
             font-weight: 600;
             height: 48px;
             justify-content: center;
-            letter-spacing: 1pt;;
+            letter-spacing: map-get($map: $Texto, $key: espaciado);
             line-height: 24px;
             min-width: 140px;
             outline: 0;
@@ -170,8 +123,8 @@ main{
 
                 .subscribe{
                     font-size: 26pt;
-                    font-family: Lora, serif;
-                    letter-spacing: 1pt;
+                    font-family: map-get($map: $Texto, $key: fuente);
+                    letter-spacing: map-get($map: $Texto, $key: espaciado);
                     color: $claro;
                 }
             }
@@ -205,9 +158,9 @@ main{
                 .subscribe{
                     text-align: center;
                     font-size: 22pt;
-                    font-family: Lora, serif;
-                    letter-spacing: 1pt;
-                    color: $claro;
+                    font-family: map-get($map: $Texto, $key: fuente);
+                    letter-spacing: map-get($map: $Texto, $key: espaciado);
+                    color: map-get($map: $Texto, $key: color);
                 }
             }
         }
@@ -228,9 +181,9 @@ main{
                 .subscribe{
                     text-align: center;
                     font-size: 18pt;
-                    font-family: Lora, serif;
-                    letter-spacing: 1pt;
-                    color: $claro;
+                    font-family: map-get($map: $Texto, $key: fuente);
+                    letter-spacing: map-get($map: $Texto, $key: espaciado);
+                    color: map-get($map: $Texto, $key: color);
                     width: 300px;
                 }
             }

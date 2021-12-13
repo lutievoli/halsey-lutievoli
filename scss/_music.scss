@@ -2,13 +2,15 @@ main{
     .promolatest{
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 750px;
+        grid-template-rows: 550px;
         grid-template-areas: 
             "cover2 info2";
 
         .cover2{
             grid-area: cover2;
             margin: auto;
+            width: 400px;
+            height: auto;
         }
         .infolatest{
             grid-area: info2;
@@ -18,10 +20,10 @@ main{
             align-items: flex-start;
 
             .latest{
-                font-family: Lora, serif;
+                font-family: map-get($map: $Texto, $key: fuente);
                 font-size: 50pt;
-                color: #D3C6B5;
-                letter-spacing: 1pt;
+                color: map-get($map: $Texto, $key: color);
+                letter-spacing: map-get($map: $Texto, $key: espaciado);
                 margin: 10px;
             }
             .reproductor1{
@@ -34,7 +36,7 @@ main{
         .promolatest{
             display: grid;
             grid-template-columns: 50% 50%;
-            grid-template-rows: 600px;
+            grid-template-rows: 500px;
             grid-template-areas: 
                 "cover2 info2";
 
@@ -46,10 +48,10 @@ main{
             }
             .infolatest{
                 .latest{
-                    font-family: Lora, serif;
+                    font-family: map-get($map: $Texto, $key: fuente);
                     font-size: 40pt;
-                    color: #D3C6B5;
-                    letter-spacing: 1pt;
+                    color: map-get($map: $Texto, $key: color);
+                    letter-spacing: map-get($map: $Texto, $key: espaciado);
                     margin: 10px;
                 }
                 .reproductor1{
@@ -76,10 +78,10 @@ main{
             }
             .infolatest{
                 .latest{
-                    font-family: Lora, serif;
+                    font-family: map-get($map: $Texto, $key: fuente);
                     font-size: 35pt;
-                    color: #D3C6B5;
-                    letter-spacing: 1pt;
+                    color: map-get($map: $Texto, $key: color);
+                    letter-spacing: map-get($map: $Texto, $key: espaciado);
                     margin: 10px;
                 }
                 .reproductor1{
@@ -105,10 +107,10 @@ main{
             }
             .infolatest{
                 .latest{
-                    font-family: Lora, serif;
+                    font-family: map-get($map: $Texto, $key: fuente);
                     font-size: 30pt;
-                    color: #D3C6B5;
-                    letter-spacing: 1pt;
+                    color: map-get($map: $Texto, $key: color);
+                    letter-spacing: map-get($map: $Texto, $key: espaciado);
                     margin: 10px;
                 }
                 .reproductor1{
@@ -142,10 +144,10 @@ main{
                 align-items: center;
 
                 .latest{
-                    font-family: Lora, serif;
+                    font-family: map-get($map: $Texto, $key: fuente);
                     font-size: 37pt;
-                    color: #D3C6B5;
-                    letter-spacing: 1pt;
+                    color: map-get($map: $Texto, $key: color);
+                    letter-spacing: map-get($map: $Texto, $key: espaciado);
                     margin-bottom: 10px;
                 }
                 .reproductor1{
@@ -159,10 +161,10 @@ main{
         .promolatest{
             .infolatest{
                 .latest{
-                    font-family: Lora, serif;
+                    font-family: map-get($map: $Texto, $key: fuente);
                     font-size: 32pt;
-                    color: #D3C6B5;
-                    letter-spacing: 1pt;
+                    color: map-get($map: $Texto, $key: color);
+                    letter-spacing: map-get($map: $Texto, $key: espaciado);
                     margin-bottom: 10px;
                 }
                 .reproductor1{
@@ -191,10 +193,10 @@ main{
             }
             .infolatest{
                 .latest{
-                    font-family: Lora, serif;
+                    font-family: map-get($map: $Texto, $key: fuente);
                     font-size: 23pt;
-                    color: #D3C6B5;
-                    letter-spacing: 1pt;
+                    color: map-get($map: $Texto, $key: color);
+                    letter-spacing: map-get($map: $Texto, $key: espaciado);
                     margin-bottom: 10px;
                 }
                 .reproductor1{

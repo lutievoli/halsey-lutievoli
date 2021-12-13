@@ -16,8 +16,8 @@ main{
         overflow: hidden;
 
         .gira{
-            color: $claro;
-            font-family: Lora, serif;
+            color: map-get($map: $Texto, $key: color);
+            font-family: map-get($map: $Texto, $key: fuente);
             font-size: 18pt;
             border-spacing: 40px;
             border-collapse: separate;
@@ -38,8 +38,8 @@ main{
     @media screen and (max-width: 1200px){
         .fechasgira{
             .gira{
-                color: $claro;
-                font-family: Lora, serif;
+                color: map-get($map: $Texto, $key: color);
+                font-family: map-get($map: $Texto, $key: fuente);
                 font-size: 16pt;
                 border-spacing: 35px;
 
@@ -60,8 +60,8 @@ main{
     @media screen and (max-width: 1025px){
         .fechasgira{
             .gira{
-                color: $claro;
-                font-family: Lora, serif;
+                color: map-get($map: $Texto, $key: color);
+                font-family: map-get($map: $Texto, $key: fuente);
                 font-size: 14pt;
                 border-spacing: 25px;
 
@@ -83,8 +83,8 @@ main{
     @media screen and (max-width: 768px){
         .fechasgira{
             .gira{
-                color: $claro;
-                font-family: Lora, serif;
+                color: map-get($map: $Texto, $key: color);
+                font-family: map-get($map: $Texto, $key: fuente);
                 font-size: 12pt;
                 border-spacing: 20px;
 
@@ -109,8 +109,8 @@ main{
             overflow: hidden;
 
             .gira{
-                color: $claro;
-                font-family: Lora, serif;
+                color: map-get($map: $Texto, $key: color);
+                font-family: map-get($map: $Texto, $key: fuente);
                 font-size: 10pt;
                 border-spacing: 10px;
 
@@ -132,8 +132,8 @@ main{
     @media screen and (max-width: 480px){
         .fechasgira{
             .gira{
-                color: $claro;
-                font-family: Lora, serif;
+                color: map-get($map: $Texto, $key: color);
+                font-family: map-get($map: $Texto, $key: fuente);
                 font-size: 7pt;
                 border-spacing: 5px;
             }

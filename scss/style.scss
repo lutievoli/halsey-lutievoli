@@ -3,6 +3,43 @@ $claro:#D3C6B5;
 $oscuro:#92836F;
 $negro:#161616;
 $rojo:#460303;
+$lora: Lora, serif;
+
+//Map
+$Texto: (
+    color: $claro,
+    fuente: $lora,
+    espaciado: 1pt,
+    puntos: 16pt,
+);
+
+//Mixin
+@mixin boton {
+    align-items: center;
+    background-color: $negro;
+    border: 2px solid $negro;
+    box-sizing: border-box;
+    color: map-get($map: $Texto, $key: color);
+    cursor: pointer;
+    display: inline-flex;
+    fill: $negro;
+    font-family: map-get($map: $Texto, $key: fuente);
+    font-size: 20px;
+    font-weight: 600;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: map-get($map: $Texto, $key: espaciado);
+    line-height: 24px;
+    min-width: 80px;
+    outline: 0;
+    padding: 0 17px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
 
 //CSS gral
 * {
@@ -21,30 +58,7 @@ body{
   background-size: cover;
 }
 button {
-    align-items: center;
-    background-color: $negro;
-    border: 2px solid $negro;
-    box-sizing: border-box;
-    color: $claro;
-    cursor: pointer;
-    display: inline-flex;
-    fill: $negro;
-    font-family: Lora, serif;
-    font-size: 20px;
-    font-weight: 600;
-    height: 48px;
-    justify-content: center;
-    letter-spacing: 1pt;;
-    line-height: 24px;
-    min-width: 80px;
-    outline: 0;
-    padding: 0 17px;
-    text-align: center;
-    text-decoration: none;
-    transition: all .3s;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
+    @include boton;
 
     &:hover{
         background-color: $oscuro;
