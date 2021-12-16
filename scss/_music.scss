@@ -1,14 +1,14 @@
 main{
     .promolatest{
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 40% 60%;
         grid-template-rows: 550px;
         grid-template-areas: 
             "cover2 info2";
 
         .cover2{
             grid-area: cover2;
-            margin: auto;
+            margin: auto auto auto 100px;
             width: 400px;
             height: auto;
         }
@@ -17,7 +17,7 @@ main{
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: flex-start;
+            align-items: center;
 
             .latest{
                 font-family: map-get($map: $Texto, $key: fuente);
@@ -30,20 +30,23 @@ main{
                 height: 80px;
                 width: 583px;
             }
+            .streamnow{
+                margin: 10px;
+            }
         }
     }
     @media screen and (max-width: 1200px){
         .promolatest{
             display: grid;
-            grid-template-columns: 50% 50%;
+            grid-template-columns: 40% 60%;
             grid-template-rows: 500px;
             grid-template-areas: 
                 "cover2 info2";
 
             .cover2{
                 grid-area: cover2;
-                margin: auto;
-                width: 400px;
+                margin: auto auto auto 100px;
+                width: 350px;
                 height: auto;
             }
             .infolatest{
@@ -64,7 +67,7 @@ main{
     @media screen and (max-width: 1025px){
         .promolatest{
             display: grid;
-            grid-template-columns: 50% 50%;
+            grid-template-columns: 40% 60%;
             grid-template-rows: 450px;
             grid-template-areas: 
                 "cover2 info2";
@@ -72,7 +75,7 @@ main{
 
             .cover2{
                 grid-area: cover2;
-                margin: auto;
+                margin: auto auto auto 80px;
                 width: 300px;
                 height: auto;
             }
@@ -94,14 +97,14 @@ main{
     @media screen and (max-width: 920px){
         .promolatest{
             display: grid;
-            grid-template-columns: 50% 50%;
+            grid-template-columns: 40% 60%;
             grid-template-rows: 400px;
             grid-template-areas: 
                 "cover2 info2";
             margin-top: 30px;
             .cover2{
                 grid-area: cover2;
-                margin: auto;
+                margin: auto auto auto 50px;
                 width: 250px;
                 height: auto;
             }
@@ -154,6 +157,10 @@ main{
                     height: 80px;
                     width: 470px;
                 }
+                .streamnow{
+                    margin: 10px;
+                    height: 50px;
+                }
             }
         }
     }
@@ -188,7 +195,7 @@ main{
             .cover2{
                 grid-area: cover2;
                 margin: auto;
-                width: 250px;
+                width: 220px;
                 height: auto;
             }
             .infolatest{
@@ -202,6 +209,10 @@ main{
                 .reproductor1{
                     height: 80px;
                     width: 295px;
+                }
+                .streamnow{
+                    margin: 10px;
+                    height: 40px;
                 }
             }
         }

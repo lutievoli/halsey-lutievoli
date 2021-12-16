@@ -1,30 +1,71 @@
-main{
-    .uia{
-        color: $claro;
-        font-family: Lora, serif;
-        font-size: 12pt;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 20px auto 20px auto;
+body{
+    main{
+        .textoerror{
+            margin: 150px auto auto;
+            width: 100%;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+
+            .oops{
+                color: $claro;
+                font-family: Lora, serif;
+                font-size: 50pt;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+            }
+            .uia{
+                color: $claro;
+                font-family: Lora, serif;
+                font-size: 18pt;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 20px auto 20px auto;
+            }
+            .volver{
+                text-decoration: underline;
+                color: $claro;
+                font-family: Lora, serif;
+                font-size: 20pt;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+            }  
+        }
+        @media screen and (max-width: 768px){
+            .textoerror{
+                margin: 100px auto auto;
+                .oops{
+                    font-size: 45pt;
+                }
+                .uia{
+                    font-size: 16pt;
+                }  
+            }
+        }
+        @media screen and (max-width: 480px){
+            .textoerror{
+                margin: 100px auto auto;
+                .oops{
+                    font-size: 40pt;
+                }
+                .uia{
+                    font-size: 14pt;
+                }  
+                .volver{
+                    font-size: 18pt;
+                }  
+            }
+        }
+        
     }
-    .gatito{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-    }
-    .volver{
-        text-decoration: underline;
-        color: $claro;
-        font-family: Lora, serif;
-        font-size: 20pt;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-    }
+
 }
 
 

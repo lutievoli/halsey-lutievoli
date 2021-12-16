@@ -198,6 +198,7 @@ main{
                 grid-area: boton;
                 margin: auto;
                 width: 134px;
+                height: 25px;
             }
         }
     }
@@ -434,11 +435,13 @@ main{
                 }
                 .hbo{
                     margin: 10px 0px 5px 0px;
-                    width: 130px
+                    width: 130px;
+                    height: 25px;
                 }
                 .trailer{
                     margin: 5px 0px 0px 0px;
-                    width: 130px
+                    width: 130px;
+                    height: 25px;
                 }
             }
         }
@@ -465,6 +468,7 @@ main{
             .infopeli{
                 .hbo{
                     margin: 5px 0px 0px 0px;
+                    height: 25px;
                     width: 130px
                 }
             }

@@ -55,7 +55,7 @@ button {
 @media screen and (max-width: 768px) {
   button {
     font-size: 10px;
-    height: 35px;
+    min-height: 35px;
     line-height: 15px;
     min-width: 50px;
     padding: 0 14px; } }
@@ -63,13 +63,13 @@ button {
 @media screen and (max-width: 625px) {
   button {
     font-size: 9px;
-    height: 30px;
+    min-height: 30px;
     padding: 0 17px; } }
 
 @media screen and (max-width: 480px) {
   button {
     font-size: 7px;
-    height: 25px; } }
+    min-height: 25px; } }
 
 header {
   background-image: url(../Assets/img/barra.jpg);
@@ -582,7 +582,8 @@ main .albumpromo {
     main .albumpromo .outnow {
       grid-area: boton;
       margin: auto;
-      width: 134px; } }
+      width: 134px;
+      height: 25px; } }
 
 @media screen and (max-width: 480px) {
   main .albumpromo {
@@ -764,10 +765,12 @@ main .pleipromo {
       justify-content: center; }
     main .pleipromo .infopeli .hbo {
       margin: 10px 0px 5px 0px;
-      width: 130px; }
+      width: 130px;
+      height: 25px; }
     main .pleipromo .infopeli .trailer {
       margin: 5px 0px 0px 0px;
-      width: 130px; } }
+      width: 130px;
+      height: 25px; } }
 
 @media screen and (max-width: 480px) {
   main .pleipromo {
@@ -786,6 +789,7 @@ main .pleipromo {
       height: auto; }
     main .pleipromo .infopeli .hbo {
       margin: 5px 0px 0px 0px;
+      height: 25px;
       width: 130px; } }
 
 main .link {
@@ -822,12 +826,12 @@ main .carousel {
 
 main .promolatest {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 40% 60%;
   grid-template-rows: 550px;
   grid-template-areas: "cover2 info2"; }
   main .promolatest .cover2 {
     grid-area: cover2;
-    margin: auto;
+    margin: auto auto auto 100px;
     width: 400px;
     height: auto; }
   main .promolatest .infolatest {
@@ -835,7 +839,7 @@ main .promolatest {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start; }
+    align-items: center; }
     main .promolatest .infolatest .latest {
       font-family: Lora, serif;
       font-size: 50pt;
@@ -845,17 +849,19 @@ main .promolatest {
     main .promolatest .infolatest .reproductor1 {
       height: 80px;
       width: 583px; }
+    main .promolatest .infolatest .streamnow {
+      margin: 10px; }
 
 @media screen and (max-width: 1200px) {
   main .promolatest {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 40% 60%;
     grid-template-rows: 500px;
     grid-template-areas: "cover2 info2"; }
     main .promolatest .cover2 {
       grid-area: cover2;
-      margin: auto;
-      width: 400px;
+      margin: auto auto auto 100px;
+      width: 350px;
       height: auto; }
     main .promolatest .infolatest .latest {
       font-family: Lora, serif;
@@ -870,13 +876,13 @@ main .promolatest {
 @media screen and (max-width: 1025px) {
   main .promolatest {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 40% 60%;
     grid-template-rows: 450px;
     grid-template-areas: "cover2 info2";
     margin-top: 50px; }
     main .promolatest .cover2 {
       grid-area: cover2;
-      margin: auto;
+      margin: auto auto auto 80px;
       width: 300px;
       height: auto; }
     main .promolatest .infolatest .latest {
@@ -892,13 +898,13 @@ main .promolatest {
 @media screen and (max-width: 920px) {
   main .promolatest {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 40% 60%;
     grid-template-rows: 400px;
     grid-template-areas: "cover2 info2";
     margin-top: 30px; }
     main .promolatest .cover2 {
       grid-area: cover2;
-      margin: auto;
+      margin: auto auto auto 50px;
       width: 250px;
       height: auto; }
     main .promolatest .infolatest .latest {
@@ -937,7 +943,10 @@ main .promolatest {
         margin-bottom: 10px; }
       main .promolatest .infolatest .reproductor1 {
         height: 80px;
-        width: 470px; } }
+        width: 470px; }
+      main .promolatest .infolatest .streamnow {
+        margin: 10px;
+        height: 50px; } }
 
 @media screen and (max-width: 590px) {
   main .promolatest .infolatest .latest {
@@ -960,7 +969,7 @@ main .promolatest {
     main .promolatest .cover2 {
       grid-area: cover2;
       margin: auto;
-      width: 250px;
+      width: 220px;
       height: auto; }
     main .promolatest .infolatest .latest {
       font-family: Lora, serif;
@@ -970,7 +979,10 @@ main .promolatest {
       margin-bottom: 10px; }
     main .promolatest .infolatest .reproductor1 {
       height: 80px;
-      width: 295px; } }
+      width: 295px; }
+    main .promolatest .infolatest .streamnow {
+      margin: 10px;
+      height: 40px; } }
 
 main .releases {
   display: grid;
@@ -1491,6 +1503,7 @@ main .fechasgira {
         padding-top: 10px; }
         main .fechasgira .gira tr td .buy {
           font-size: 10pt;
+          height: 20px;
           width: 80px; } }
 
 @media screen and (max-width: 480px) {
@@ -1507,6 +1520,7 @@ main .fechasgira {
     padding-top: 10px; }
     main .fechasgira .gira tr td .buy {
       font-size: 8pt;
+      height: 10px;
       width: 60px; } }
 
 main .subscribir {
@@ -1682,31 +1696,57 @@ main .clearsend {
       width: 300px;
       margin: 8px 0px 15px 0px; } }
 
-main .uia {
-  color: #D3C6B5;
-  font-family: Lora, serif;
-  font-size: 12pt;
-  text-align: center;
+body main .textoerror {
+  margin: 150px auto auto;
+  width: 100%;
+  height: 400px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px auto 20px auto; }
+  flex-direction: column; }
+  body main .textoerror .oops {
+    color: #D3C6B5;
+    font-family: Lora, serif;
+    font-size: 50pt;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto; }
+  body main .textoerror .uia {
+    color: #D3C6B5;
+    font-family: Lora, serif;
+    font-size: 18pt;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 20px auto; }
+  body main .textoerror .volver {
+    text-decoration: underline;
+    color: #D3C6B5;
+    font-family: Lora, serif;
+    font-size: 20pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto; }
 
-main .gatito {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto; }
+@media screen and (max-width: 768px) {
+  body main .textoerror {
+    margin: 100px auto auto; }
+    body main .textoerror .oops {
+      font-size: 45pt; }
+    body main .textoerror .uia {
+      font-size: 16pt; } }
 
-main .volver {
-  text-decoration: underline;
-  color: #D3C6B5;
-  font-family: Lora, serif;
-  font-size: 20pt;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto; }
+@media screen and (max-width: 480px) {
+  body main .textoerror {
+    margin: 100px auto auto; }
+    body main .textoerror .oops {
+      font-size: 40pt; }
+    body main .textoerror .uia {
+      font-size: 14pt; }
+    body main .textoerror .volver {
+      font-size: 18pt; } }
 
 #preloader {
   background: #161616 url(../Assets/img/Loader.gif) no-repeat center center;
