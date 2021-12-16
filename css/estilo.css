@@ -1635,3 +1635,11 @@ main .volver {
   justify-content: center;
   align-items: center;
   margin: auto; }
+
+#preloader {
+  background: #161616 url(../Assets/img/Loader.gif) no-repeat center center;
+  background-size: 10%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100; }
