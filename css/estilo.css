@@ -852,6 +852,60 @@ main .promolatest {
     main .promolatest .infolatest .streamnow {
       margin: 10px; }
 
+@media screen and (min-width: 1900px) {
+  main .promolatest {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 675px;
+    grid-template-areas: "cover2 info2"; }
+    main .promolatest .cover2 {
+      grid-area: cover2;
+      margin: auto auto auto 225px;
+      width: 475px;
+      height: auto; }
+    main .promolatest .infolatest .latest {
+      font-family: Lora, serif;
+      font-size: 65pt;
+      color: #D3C6B5;
+      letter-spacing: 1pt;
+      margin: 10px; }
+    main .promolatest .infolatest .reproductor1 {
+      height: 80px;
+      width: 737px; } }
+
+@media screen and (min-width: 1600px) and (max-width: 1899px) {
+  main .promolatest {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 600px;
+    grid-template-areas: "cover2 info2"; }
+    main .promolatest .cover2 {
+      grid-area: cover2;
+      margin: auto auto auto 200px;
+      width: 425px;
+      height: auto; }
+    main .promolatest .infolatest .latest {
+      font-family: Lora, serif;
+      font-size: 55pt;
+      color: #D3C6B5;
+      letter-spacing: 1pt;
+      margin: 10px; }
+    main .promolatest .infolatest .reproductor1 {
+      height: 80px;
+      width: 632px; } }
+
+@media screen and (min-width: 1400px) and (max-width: 1599px) {
+  main .promolatest {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 550px;
+    grid-template-areas: "cover2 info2"; }
+    main .promolatest .cover2 {
+      grid-area: cover2;
+      margin: auto auto auto 150px;
+      width: 400px;
+      height: auto; } }
+
 @media screen and (max-width: 1200px) {
   main .promolatest {
     display: grid;
@@ -1623,6 +1677,30 @@ main .clearsend {
       background-color: #92836F;
       border-color: #92836F;
       fill: #92836F; }
+
+@media screen and (min-width: 1900px) {
+  main .subscribir {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 201px 0px 150px 0px; } }
+
+@media screen and (min-width: 1600px) and (max-width: 1899px) {
+  main .subscribir {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 103px 0px 69px 0px; } }
+
+@media screen and (min-width: 1500px) and (max-width: 1599px) {
+  main .subscribir {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 89px 0px 46px 0px; } }
 
 @media screen and (max-width: 1025px) {
   main .subscribir {

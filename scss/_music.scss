@@ -35,6 +35,80 @@ main{
             }
         }
     }
+    @media screen and (min-width: 1900px){
+        .promolatest{
+            display: grid;
+            grid-template-columns: 35% 65%;
+            grid-template-rows: 675px;
+            grid-template-areas: 
+                "cover2 info2";
+    
+            .cover2{
+                grid-area: cover2;
+                margin: auto auto auto 225px;
+                width: 475px;
+                height: auto;
+            }
+            .infolatest{
+                .latest{
+                    font-family: map-get($map: $Texto, $key: fuente);
+                    font-size: 65pt;
+                    color: map-get($map: $Texto, $key: color);
+                    letter-spacing: map-get($map: $Texto, $key: espaciado);
+                    margin: 10px;
+                }
+                .reproductor1{
+                    height: 80px;
+                    width: 737px;
+                }
+            }
+        }    
+    }
+    @media screen and (min-width: 1600px) and (max-width: 1899px){
+        .promolatest{
+            display: grid;
+            grid-template-columns: 35% 65%;
+            grid-template-rows: 600px;
+            grid-template-areas: 
+                "cover2 info2";
+    
+            .cover2{
+                grid-area: cover2;
+                margin: auto auto auto 200px;
+                width: 425px;
+                height: auto;
+            }
+            .infolatest{
+                .latest{
+                    font-family: map-get($map: $Texto, $key: fuente);
+                    font-size: 55pt;
+                    color: map-get($map: $Texto, $key: color);
+                    letter-spacing: map-get($map: $Texto, $key: espaciado);
+                    margin: 10px;
+                }
+                .reproductor1{
+                    height: 80px;
+                    width: 632px;
+                }
+            }
+        }    
+    }
+    @media screen and (min-width: 1400px) and (max-width: 1599px){
+        .promolatest{
+            display: grid;
+            grid-template-columns: 35% 65%;
+            grid-template-rows: 550px;
+            grid-template-areas: 
+                "cover2 info2";
+    
+            .cover2{
+                grid-area: cover2;
+                margin: auto auto auto 150px;
+                width: 400px;
+                height: auto;
+            }
+        }    
+    }
     @media screen and (max-width: 1200px){
         .promolatest{
             display: grid;

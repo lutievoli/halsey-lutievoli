@@ -98,7 +98,33 @@ main{
             }
         }
     }
-
+    @media screen and (min-width: 1900px){
+        .subscribir{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 201px 0px 150px 0px;
+        }
+    }
+    @media screen and (min-width: 1600px) and (max-width: 1899px){
+        .subscribir{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 103px 0px 69px 0px;
+        }
+    }
+    @media screen and (min-width: 1500px) and (max-width: 1599px){
+        .subscribir{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 89px 0px 46px 0px;
+        }
+    }
     @media screen and (max-width: 1025px){
         .subscribir{
             display: flex;
