@@ -1692,7 +1692,7 @@ main .clearsend {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 103px 0px 69px 0px; } }
+    margin: 105px 0px 79px 0px; } }
 
 @media screen and (min-width: 1500px) and (max-width: 1599px) {
   main .subscribir {
@@ -1700,7 +1700,7 @@ main .clearsend {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 89px 0px 46px 0px; } }
+    margin: 90px 0px 50px 0px; } }
 
 @media screen and (max-width: 1025px) {
   main .subscribir {
