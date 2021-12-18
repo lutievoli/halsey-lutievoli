@@ -394,37 +394,37 @@ footer {
 @media screen and (max-width: 480px) {
   footer {
     background-image: url(../Assets/img/barra2.jpg);
-    height: 30px;
+    height: 35px;
     display: flex;
     justify-content: center;
     align-items: center; }
     footer .insta {
       position: relative;
-      height: 20px;
+      height: 25px;
       width: auto;
       margin: 0px 10px 5px 0px;
       padding-top: 5px; }
     footer .face {
       position: relative;
-      height: 20px;
+      height: 25px;
       width: auto;
       padding-top: 5px;
       margin: 0px 15px 5px 15px; }
     footer .twitter {
       position: relative;
-      height: 18px;
+      height: 23px;
       width: auto;
       padding-top: 5px;
       margin: 0px 15px 5px 15px; }
     footer .youtube {
       position: relative;
-      height: 20px;
+      height: 25px;
       width: auto;
       padding-top: 5px;
       margin: 0px 15px 5px 15px; }
     footer .spotify {
       position: relative;
-      height: 20px;
+      height: 25px;
       width: auto;
       padding-top: 5px;
       margin: 0px 15px 5px 15px; } }
@@ -1017,7 +1017,7 @@ main .releases {
         color: #D3C6B5;
         font-family: Lora, serif;
         text-decoration: none;
-        background: radial-gradient(circle, rgba(110, 0, 0, 0.7) 0%, rgba(22, 0, 0, 0.6) 100%);
+        background: radial-gradient(circle, rgba(110, 0, 0, 0.8) 0%, rgba(22, 0, 0, 0.7) 100%);
         font-size: 20pt;
         letter-spacing: 1pt;
         display: flex;
@@ -1676,7 +1676,7 @@ main .clearsend {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 150px 0px 150px 0px; }
+    margin: 150px 0px 156px 0px; }
     main .subscribir .newsletter {
       display: flex;
       justify-content: center;
